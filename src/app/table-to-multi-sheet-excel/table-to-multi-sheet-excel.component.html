@@ -1,0 +1,44 @@
+<div class="container">
+    <table #table1 title="table1">
+        <tr>
+            <td><b>Car Type</b></td>
+            <td><b>Collection</b></td>
+        </tr>
+        -------------------------------------------------- <br/>
+        --------------------------------------------------
+        <tr *ngFor="let row of carCollection1">
+            <td>{{row.carType}}</td>
+            <td>{{row.Collection}}</td>
+        </tr>
+    </table>
+    <table #table2>
+        <tr>
+            <td><b>Car Type</b></td>
+            <td><b>Collection</b></td>
+        </tr>
+        -------------------------------------------------- <br/>
+        --------------------------------------------------
+        <tr *ngFor="let row of carCollection2">
+            <td>{{row.carType}}</td>
+            <td>{{row.Collection}}</td>
+        </tr>
+    </table>
+    <table #table3>
+        <tr>
+            <td><b>Car Type</b></td>
+            <td><b>Collection</b></td>
+        </tr>
+        -------------------------------------------------- <br/>
+        --------------------------------------------------
+        <tr *ngFor="let row of carCollection3">
+            <td>{{row.carType}}</td>
+            <td>{{row.Collection}}</td>
+        </tr>
+    </table>
+</div>
+
+<div style="margin-left: 5%;" >
+    <Button  (click)="export()"> Export to Excel </Button>
+</div>
+
+

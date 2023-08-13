@@ -1,0 +1,14 @@
+<table #table>
+    <tr>
+        <td><b>Car Type</b></td>
+        <td><b>Collection</b></td>
+    </tr>
+    -------------------------------------------------- <br/>
+    --------------------------------------------------
+    <tr *ngFor="let row of carCollection">
+        <td>{{row.carType}}</td>
+        <td>{{row.Collection}}</td>
+    </tr>
+</table>
+
+<Button (click)="export()"> Export to Excel </Button>
